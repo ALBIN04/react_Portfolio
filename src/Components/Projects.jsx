@@ -2,7 +2,7 @@ import "./Projects.css";
 import { motion } from "framer-motion";
 
 import ProjectCard from "./ProjectCard";
-import projects from "../Data/projects";
+import projects from "../Data/Projects";
 
 const container = {
   hidden: {},
