@@ -1,0 +1,153 @@
+#contact {
+  background: var(--red);
+  text-align: center;
+}
+
+#contact .section-label {
+  color: var(--paper);
+}
+
+#contact .section-label::after {
+  background: var(--yellow);
+}
+
+.contact-bubble {
+  max-width: 560px;
+  margin: 0 auto 40px;
+
+  padding: 36px 40px;
+
+  background: var(--paper);
+
+  border: var(--border-thick);
+
+  border-radius: 24px;
+
+  box-shadow: 10px 10px 0 var(--ink);
+
+  position: relative;
+}
+
+.contact-bubble::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -28px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 28px solid var(--ink);
+}
+
+.contact-bubble::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: -20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 22px solid var(--paper);
+
+  z-index: 1;
+}
+
+.contact-bubble p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.contact-input {
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  padding: 10px 14px;
+
+  border: var(--border-thick);
+
+  background: var(--aged);
+
+  box-shadow: 3px 3px 0 var(--ink);
+
+  outline: none;
+
+  resize: vertical;
+
+  font-size: 1rem;
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+}
+
+.contact-input:focus {
+  background: var(--paper);
+}
+
+.send-btn {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 56px;
+}
+
+.contact-link {
+  text-decoration: none;
+
+  padding: 12px 28px;
+
+  border: var(--border-thick);
+
+  background: var(--paper);
+
+  color: var(--ink);
+
+  font-family: "Bangers", cursive;
+  font-size: 1.3rem;
+
+  letter-spacing: 1px;
+
+  box-shadow: var(--shadow);
+
+  transition: transform .15s;
+}
+
+.contact-link:hover {
+  transform: translate(-2px,-2px);
+}
+
+.contact-link.yt {
+  background: var(--yellow);
+}
+
+@media(max-width:600px){
+
+.contact-bubble{
+padding:24px;
+}
+
+.contact-links{
+flex-direction:column;
+}
+
+.contact-link{
+width:100%;
+}
+
+}

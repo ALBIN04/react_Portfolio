@@ -1,0 +1,20 @@
+footer {
+  background: var(--ink);
+  color: var(--paper);
+
+  text-align: center;
+
+  padding: 24px;
+
+  border-top: var(--border-thick);
+
+  font-family: "Bangers", cursive;
+
+  font-size: 1.1rem;
+
+  letter-spacing: 2px;
+}
+
+footer span {
+  color: var(--yellow);
+}

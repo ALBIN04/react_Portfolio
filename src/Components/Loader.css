@@ -1,0 +1,47 @@
+.loader {
+  position: fixed;
+  inset: 0;
+
+  background: #0b0b0b;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.loader h1 {
+  font-family: "Bangers", cursive;
+  font-size: 5rem;
+  color: #FFD54A;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.loader p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.loading-bar {
+  width: 300px;
+  height: 12px;
+
+  border: 3px solid white;
+
+  overflow: hidden;
+}
+
+.loading-fill {
+  height: 100%;
+  background: #E63946;
+}
+
+.loader-text {
+  margin-top: 20px;
+  font-family: "Permanent Marker", cursive;
+  color: #FFD54A;
+}
