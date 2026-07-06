@@ -88,7 +88,8 @@ nav {
 
 .hamburger {
   display: none;
-
+  font-family: "Bangers", cursive;
+  letter-spacing: 2px;
   font-size: 2rem;
   cursor: pointer;
   color: var(--ink);
@@ -139,3 +140,4 @@ nav {
     opacity: 1;
   }
 }
+

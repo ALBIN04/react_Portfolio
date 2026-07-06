@@ -30,92 +30,99 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav>
-      <motion.a
-        href="#"
-        className="nav-logo"
-        initial={{ x: -80, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        whileHover={{
-          scale: 1.08,
-          rotate: -2,
-        }}
-      >
-        ALBIN.
-      </motion.a>
+    <>
 
-      {/* Hamburger Button */}
-      <div
-        className="hamburger"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? "✖ CLOSE" : "💥 MENU"}
-      </div>
+      <nav>
 
-      <motion.ul
-        className={`nav-links ${menuOpen ? "active" : ""}`}
-        variants={navContainer}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.li variants={navItem}>
-          <Link
-            to="about"
-            smooth={true}
-            duration={600}
-            spy={true}
-            offset={-80}
-            activeClass="active"
-            onClick={() => setMenuOpen(false)}
-          >
-            About
-          </Link>
-        </motion.li>
+        {/* Logo */}
+        <motion.a
+          href="#"
+          className="nav-logo"
+          initial={{ x: -80, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          whileHover={{
+            scale: 1.08,
+            rotate: -2,
+          }}
+        >
+          ALBIN.
+        </motion.a>
 
-        <motion.li variants={navItem}>
-          <Link
-            to="projects"
-            smooth={true}
-            duration={600}
-            spy={true}
-            offset={-80}
-            activeClass="active"
-            onClick={() => setMenuOpen(false)}
-          >
-            Projects
-          </Link>
-        </motion.li>
+        {/* Hamburger */}
+        <div
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? "✖ CLOSE" : "💥 MENU"}
+        </div>
 
-        <motion.li variants={navItem}>
-          <Link
-            to="skills"
-            smooth={true}
-            duration={600}
-            spy={true}
-            offset={-80}
-            onClick={() => setMenuOpen(false)}
-            activeClass="active"
-          >
-            Skills
-          </Link>
-        </motion.li>
+        {/* Navigation */}
+        <motion.ul
+          className={`nav-links ${menuOpen ? "active" : ""}`}
+          variants={navContainer}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.li variants={navItem}>
+            <Link
+              to="about"
+              smooth={true}
+              duration={600}
+              spy={true}
+              offset={-80}
+              activeClass="active"
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+          </motion.li>
 
-        <motion.li variants={navItem}>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={600}
-            spy={true}
-            offset={-80}
-            activeClass="active"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
-          </Link>
-        </motion.li>
-      </motion.ul>
-    </nav>
+          <motion.li variants={navItem}>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={600}
+              spy={true}
+              offset={-80}
+              activeClass="active"
+              onClick={() => setMenuOpen(false)}
+            >
+              Projects
+            </Link>
+          </motion.li>
+
+          <motion.li variants={navItem}>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={600}
+              spy={true}
+              offset={-80}
+              activeClass="active"
+              onClick={() => setMenuOpen(false)}
+            >
+              Skills
+            </Link>
+          </motion.li>
+
+          <motion.li variants={navItem}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={600}
+              spy={true}
+              offset={-80}
+              activeClass="active"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </motion.li>
+        </motion.ul>
+
+      </nav>
+    </>
   );
 }
 

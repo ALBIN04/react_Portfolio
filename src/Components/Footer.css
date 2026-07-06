@@ -18,3 +18,47 @@ footer {
 footer span {
   color: var(--yellow);
 }
+
+.comic-footer{
+    background: var(--ink);
+    color: var(--paper);
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    border-top:var(--border-thick);
+
+    position:relative;
+}
+
+.comic-footer h2{
+    font-family:"Bangers",cursive;
+    font-size:4rem;
+    color:var(--yellow);
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
+    text-shadow:4px 4px 0 var(--red);
+}
+
+.comic-footer p{
+    font-size:1.2rem;
+    margin:10px 0;
+}
+
+.continued{
+    color:var(--yellow);
+    font-family:"Permanent Marker";
+    font-size:1.5rem;
+}
+
+.footer-bottom{
+    margin-top:40px;
+
+    opacity:.8;
+
+    font-size:.95rem;
+}
